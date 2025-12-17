@@ -1,48 +1,43 @@
-# {{TITLE}} – Beginner Guide
-
-> Example: **Getting Started with NestJS – A Beginner’s Guide**
-
----
+# NestJS Modules – Beginner Guide
 
 ## Overview
 
-### What technology is this?
-{{Brief explanation of the technology}}
+In NestJS, a **module** is a class annotated with the `@Module()` decorator.
+Modules help organize your application into logical parts.
 
-### Where is it used?
-{{Common use cases}}
-
-### Real-world example
-{{One real-world application of this technology}}
+Think of a module as a **folder that groups related features together**.
 
 ---
 
-## Prerequisites / Required Access
+## Why Modules Matter
 
-Before starting, make sure you have:
+Modules help you:
+- Keep code organized
+- Separate concerns (users, auth, products, etc.)
+- Control what parts of the app can access others
 
-### Access
-- Access to the application or repository
-- Permission to create or edit Toolkit Documents
-
-### System Requirements
-- **OS:** Windows / macOS / Linux
-- **Editor:** VS Code (recommended)
-- **Runtime:** {{Node.js / Java / Python}} (version {{x+}})
-- **Package Manager:** {{npm / yarn / pip}}
-- **Optional Tools:** Git, Postman, Docker
-
-📌 **Common mistake:** {{Common prerequisite issue}}  
-✔ **Fix:** {{How to resolve it}}
+Without modules, large NestJS apps become messy and hard to maintain.
 
 ---
 
-## Setup Instructions
+## Basic Module Example
 
-Follow these steps in order.
+```ts
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
-### Step 1 — {{Describe the action}}
+@Module({
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
+---
 
-```bash
-{{command here}}
+## References
+
+- [Official NestJS Docs](https://docs.nestjs.com)
+- [NestJS Modules](https://docs.nestjs.com/modules)
+- [NestJS Controllers](https://docs.nestjs.com/controllers)
+
 
