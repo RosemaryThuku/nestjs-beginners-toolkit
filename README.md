@@ -16,12 +16,10 @@ Start here:
 ```bash
 npm install
 npm run start:dev
-
 ---
 
 ## References
 
-- [NestJS Modules Documentation](https://docs.nestjs.com/modules)
-- [NestJS Fundamentals](https://docs.nestjs.com/fundamentals)
-
-
+- [Official NestJS Docs](https://docs.nestjs.com)
+- [NestJS Modules](https://docs.nestjs.com/modules)
+- [NestJS Controllers](https://docs.nestjs.com/controllers)
