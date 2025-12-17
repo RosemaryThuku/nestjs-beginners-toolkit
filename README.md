@@ -1,43 +1,27 @@
-# NestJS Modules – Beginner Guide
+# NestJS Beginners Toolkit 🚀
 
-## Overview
+A beginner-friendly NestJS toolkit with step-by-step documentation,
+examples, and learning notes.
 
-In NestJS, a **module** is a class annotated with the `@Module()` decorator.
-Modules help organize your application into logical parts.
+## 📘 Documentation
 
-Think of a module as a **folder that groups related features together**.
+Start here:
 
----
+- [Getting Started](docs/getting-started.md)
+- [Controllers Guide](docs/controllers.md)
+- [Modules Explained](docs/modules.md)
 
-## Why Modules Matter
+## 🛠️ Running the Project
 
-Modules help you:
-- Keep code organized
-- Separate concerns (users, auth, products, etc.)
-- Control what parts of the app can access others
+```bash
+npm install
+npm run start:dev
 
-Without modules, large NestJS apps become messy and hard to maintain.
-
----
-
-## Basic Module Example
-
-```ts
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-
-@Module({
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule {}
 ---
 
 ## References
 
-- [Official NestJS Docs](https://docs.nestjs.com)
-- [NestJS Modules](https://docs.nestjs.com/modules)
-- [NestJS Controllers](https://docs.nestjs.com/controllers)
+- [NestJS Modules Documentation](https://docs.nestjs.com/modules)
+- [NestJS Fundamentals](https://docs.nestjs.com/fundamentals)
 
 
